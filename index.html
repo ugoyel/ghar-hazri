@@ -16,6 +16,10 @@
 <p>Expenses you add (amount, category, note, date and how you paid), the people you split bills with (the name, and the phone number and UPI ID if you add them), and the settlements you record are stored on your phone. When you sign in, they are also stored online so they come back on a new phone. They are private to you: other members of your household cannot see them, unless you turn on Show to family for a particular expense. The people you split with are not told anything unless you send them a reminder yourself, for example on WhatsApp. Your monthly budget and your own UPI ID, if you add it for reminders, are stored the same way.</p>
 <h2>Spreadsheet download</h2>
 <p>Download as spreadsheet saves a CSV file of your expenses and payments to a place you choose on your phone. The app does not send it anywhere.</p>
+<h2>Adding payments automatically (optional)</h2>
+<p>This is off until you turn it on. Ghar Hazri first explains what it reads and asks you to agree, and then Android asks you to give it notification access. While it is on, the app reads, on your phone, the text of payment alerts from SMS apps, bank apps and payment apps such as Google Pay, PhonePe and Paytm. From an alert about money you paid, it keeps only the amount, who you paid, the date and time, the reference number and which app or bank the alert came from. It uses them to add an expense, or to list the payment for you to check first. Alerts about money you received, one-time passwords and all other notifications and messages are ignored and not stored. Alert text is never uploaded. The expenses it adds are stored like any other expense (see Expenses and splitting). You can turn it off in the app at any time; this also removes alerts not yet read. You can also remove notification access in your phone's settings.</p>
+<h2>Importing statements</h2>
+<p>Import past payments reads a file that you choose, such as a Google Pay export from Google Takeout, a PhonePe or Paytm statement, or a bank statement in PDF, Excel or CSV format. The file is read on your phone and is not uploaded or kept. If the file has a password, you type it in the app; it is used only to open the file and is not saved. The payments you choose to add become expenses, stored like any other expense.</p>
 <h2>Who can see your records</h2>
 <p>Only people you invite with a code can join your household. Co-owners see everything except services another owner marks Private. Workers see only their own service, attendance and chat. We do not sell your data.</p>
 <h2>Sign-in</h2>
@@ -23,9 +27,11 @@
 <h2>Contacts</h2>
 <p>When you tap Pick from contacts, the app asks for permission to read your contacts. It shows your contact list on your phone so you can tick the people who work for your home. Only the people you tick are saved, with their name and phone number. The rest of your contact list is never stored or sent anywhere. If you do not allow contacts, you can type each person's details instead, or choose one contact at a time with Android's contact picker.</p>
 <h2>MyGate alerts</h2>
-<p>If you give notification access, the app reads the text of alerts from the MyGate app on your phone to find the person who entered and mark attendance. It ignores alerts from every other app. The alert text itself is not uploaded. The attendance it creates is stored with your household's records. You can turn this off at any time in your phone's notification access settings.</p>
+<p>If you give notification access, the app reads the text of alerts from the MyGate app on your phone to find the person who entered and mark attendance. Apart from payment alerts, when you turn on Adding payments automatically, it ignores alerts from every other app. The alert text itself is not uploaded. The attendance it creates is stored with your household's records. You can turn this off at any time in your phone's notification access settings.</p>
 <h2>QR scanning</h2>
 <p>Scan QR code uses Google Play services on your phone. The app receives only the text of the code you scan, and uses it to open your UPI app.</p>
+<h2>Open-source software</h2>
+<p>Statement PDFs are read with Mozilla's pdf.js, which is built into the app and runs on your phone.</p>
 <h2>Calls and payments</h2>
 <p>The Call button opens your phone's dialer with the number filled in. The Pay button and Scan and pay open a UPI app that you choose. The payment happens inside that UPI app; when you come back, Ghar Hazri asks whether it went through and saves the record only if you say yes. Ghar Hazri does not see or store your bank details or UPI PIN.</p>
 <h2>Backups</h2>
